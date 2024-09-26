@@ -18,6 +18,7 @@ import LikedComponent from "../../Components/LikedComponent"
 // import Pawpaw from "../../assets/Pawpaw.png"
 import Carrot from "../../assets/carrot.png";
 import ProductCardDetails from "../../Components/ProductCardDetails/ProductCardDetails";
+import CartCounter from "../../Components/CartCounter"
 
 const ProductPage = () => {
   const imgs = [
@@ -133,6 +134,7 @@ const ProductPage = () => {
               )
               )}
       </div>
+      <CartCounter/>
       <div className="center-btn">
       <button className='vie'><a href="">View More</a></button>
       </div>

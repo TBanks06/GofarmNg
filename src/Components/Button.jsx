@@ -1,10 +1,15 @@
-import React from 'react'
+import React, { useState }from 'react'
 import "./Button.css"
-// import { Link } from 'react-router-dom'
+
+
 const Button = () => {
+  const [cartCount, setCartCount]= useState(0);
+  const handleAddToCart = () => {
+    setCartCount(cartCount + 1);
+  }
   return (
     <div className='btn-1'>
-        <button> <a href="">Add to cart</a> </button>
+        <button onclick={handleAddToCart}><a href="">Add to cart</a> </button>
       
     </div>
   )
